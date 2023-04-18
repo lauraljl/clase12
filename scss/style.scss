@@ -1,3 +1,12 @@
+//variables
+//declaracion antes. :root{--nombrevariable:valor;}
+//$declaracionvariable:valor;
+$black:black;
+$white:white;
+$f-size-p-desktop:20px;
+$f-size-p-mobile:18px;
+
+//Nesting
 header{background-color: aqua;
 nav{
     padding: 20px;
@@ -9,7 +18,7 @@ nav{
            
             a{
                text-decoration: none;
-                color: orange;
+                color: $black;
                 transition: 1s all;
                 font:{
                     size: 20px;
@@ -17,9 +26,9 @@ nav{
                     weight: normal;
                 }
                 &:hover{
-                    background-color: violet;
+                    background-color: $black;
                     border-radius: 20px;
-                    color: black;
+                    color: $white;
                 }
             }
         }
